@@ -18,7 +18,7 @@ class ArticlePageContainer extends Component {
       window.scrollTo(0, 0);
     });
 
-    axios.get(`http://localhost:1337/articles/${this.props.match.params.id}`)
+    axios.get(`https://abdn-cms.herokuapp.com/articles/${this.props.match.params.id}`)
       .then(res => {
         this.setState({
           data: res.data
