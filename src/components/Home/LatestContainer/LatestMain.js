@@ -21,7 +21,7 @@ const LatestMain = ({ article }) => {
 
       <div id="main-text-bottom">
         <p id="latest-bottom-text">
-          {article.shortDesc}...
+          {article.shortDesc}..
         </p>
         <Link to={`/articles/${article.id}`} id="latest-main-link">Read Article</Link>
       </div>
