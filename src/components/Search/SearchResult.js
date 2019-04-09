@@ -11,7 +11,7 @@ const SearchResult = ({ article }) => {
         <img id="result-img" src={article.mainImage} alt={article.mainImageInfo + ' article image'} />
       </div>
       <div id="result-content">
-        <Link id="result-link" to={`/articles/${article._id}`}>
+        <Link id="result-link" to={`/articles/${article.id}`}>
           <h3 id="result-title"><span id="result-heading">{article.title}</span></h3>
         </Link>
         <small id="result-details">{authorFullName} | {datePublished.toDateString()}</small>
