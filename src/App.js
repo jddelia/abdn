@@ -33,7 +33,7 @@ class App extends Component {
 
   async componentDidMount() {
 
-    const articlesApi = new DataApi('http://localhost:1337/articles');
+    const articlesApi = new DataApi('https://abdn-cms.herokuapp.com/articles');
     
     await articlesApi.requestData();
     await this.setState({
