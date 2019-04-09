@@ -27,7 +27,7 @@ class ArticlePageContainer extends Component {
   }
   
   render() {
-    if (!this.state.data) return <p>test</p>;
+    if (!this.state.data) return <p>Loading...</p>;
 
     return (
       <ArticlePage article={this.state.data} />
