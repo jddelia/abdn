@@ -12,7 +12,7 @@ const LatestMain = ({ article }) => {
       </div>
 
       <div id="main-text-right">
-          <Link to={`/articles/${article._id}`} id="main-title-link">
+          <Link to={`/articles/${article.id}`} id="main-title-link">
             <h3><span id="text-right-title">{article.title}</span></h3>
           </Link>
           <small id="latest-main-info">{datePublished.toDateString()}</small>
