@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SearchResult = ({ article }) => {
-  let authorFullName = article.authorFirstName + ' ' + article.authorLastName;
-  const datePublished = new Date(String(article.date) + ':EST');
+  const authorFullName = article.authorFirstName + ' ' + article.authorLastName;
+  let formattedDate = article.date;
+  formattedDate = formattedDate.replace(/-/g,'/');
+  
+  const datePublished = new Date(String(formattedDate));
   
   return (
     <div id="search-result">

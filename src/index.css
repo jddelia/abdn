@@ -42,7 +42,7 @@ nav {
 
 .nav-right {
   justify-self: end;
-  padding-right: 2%;
+  padding-right: 8%;
 }
 
 .nav-link {
@@ -61,7 +61,7 @@ nav {
 .support {
   border: 2px solid rgb(255, 109, 72);
   border-radius: 5px;
-  padding: 4%;
+  padding: 3%;
   transition: all .2s;
 }
 
@@ -616,6 +616,14 @@ footer {
   color: #ffffff;
 }
 
+/*//////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+/////////////// MOBILE /////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//////////////////////////////////////*/
+
 @media only screen and (max-width: 490px) {
   nav {
     position: fixed;
@@ -643,8 +651,9 @@ footer {
   }
   
   .nav-right {
-    margin-left: 6%;
+    grid-column: 2/4;
     justify-self: end;
+    padding-right: 6%;
   }
   
   .nav-link {
@@ -1208,6 +1217,14 @@ footer {
   }
 }
 
+/*//////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+/////////////// TABLET /////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+//////////////////////////////////////*/
+
 @media only screen and (min-width: 490px) and (max-width: 1000px) {
   nav {
     position: fixed;
@@ -1237,6 +1254,7 @@ footer {
   .nav-right {
     grid-column: 2/4;
     justify-self: end;
+    padding-right: 6%;
   }
   
   .nav-link {

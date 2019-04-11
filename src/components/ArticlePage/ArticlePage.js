@@ -2,7 +2,10 @@ import React from 'react';
 
 const ArticlePage = ({ article }) => {
   const authorFullName = article.authorFirstName + ' ' + article.authorLastName;
-  const datePublished = new Date(String(article.date) + ':EST');
+  let formattedDate = article.date;
+  formattedDate = formattedDate.replace(/-/g,'/');
+  
+  const datePublished = new Date(String(formattedDate));
   
   return (
     <div className="article-container">

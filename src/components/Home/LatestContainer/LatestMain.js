@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 
 const LatestMain = ({ article }) => {
   const authorFullName = article.authorFirstName + ' ' + article.authorLastName;
-  const datePublished = new Date(String(article.date) + ':EST');
-
+  let formattedDate = article.date;
+  formattedDate = formattedDate.replace(/-/g,'/');
+  
+  const datePublished = new Date(String(formattedDate));
+  
   return (
     <div id="latest-main">
       <div id="latest-img">

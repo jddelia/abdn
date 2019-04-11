@@ -15,7 +15,6 @@ class Search extends Component {
 
   componentDidMount() {
     this.props.history.listen(() => {
-      console.log('tes')
       window.scrollTo(0, 0);
     });
   }
