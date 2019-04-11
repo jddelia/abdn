@@ -652,7 +652,7 @@ footer {
   
   .nav-right {
     grid-column: 2/4;
-    justify-self: end;
+    justify-self: center;
     padding-right: 6%;
   }
   
@@ -1253,7 +1253,7 @@ footer {
   
   .nav-right {
     grid-column: 2/4;
-    justify-self: end;
+    justify-self: center;
     padding-right: 6%;
   }
   
